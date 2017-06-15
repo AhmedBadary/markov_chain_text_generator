@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div class="project">
+        <section id="main">
+            <article>
+                <style>
+                textarea {
+                    width: 100%;
+                }
+                </style>
+                <h2>Markov chain text generator</h2>
+                <p>This is a simple Markov chain text generator. </p>
+                <div id="output"></div>
+                <h2>Input text</h2>
+                <textarea rows="20" cols="60" name="input" id="inputText"></textarea>
+                <br>
+                <select name="text">
+                    <option value="">Or select one of the input texts here below [Not Supported yet]</option>
+                    <option value="alice">Alice's Adventures in Wonderland, by Lewis Carroll</option>
+                    <option value="calvin">The Wikipedia article on Calvin and Hobbes</option>
+                    <option value="kant">The Critique of Pure Reason by Immanuel Kant</option>
+                </select>
+                <br>
+                <label for="order">Order</label>
+                <input type="text" name="order" value="4" id="order">
+                <label for="length">Text size of output (chars)</label>
+                <input type="text" name="length" value="2500">
+                <br>
+                <button id="GO">Generate</button>
+            </article>
+        </section>
+    </div>
+</body>
+<script language="javascript" type="text/javascript" src="script.js"></script>
+<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+<script language="javascript" src="libraries/p5.dom.js"></script>
+
+</html>
